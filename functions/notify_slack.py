@@ -39,7 +39,7 @@ def cloudwatch_notification(message, region):
 def default_notification(message):
     return {
             "fallback": "A new message",
-            "fields": [{"title": "Message", "value": json.dumps(message), "short": False}]
+            "fields": [{"title": "Message", "value": message, "short": False}]
         }
 
 
